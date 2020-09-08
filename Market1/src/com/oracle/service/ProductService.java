@@ -7,7 +7,7 @@ import com.oracle.dao.ProductDao;
 import com.oracle.entity.Product;
 
 public class ProductService {
-//²éÑ¯
+//æŸ¥è¯¢
 	ProductDao pd=new ProductDao();
 	public ArrayList<Product> Find1() throws SQLException {
 		
@@ -15,23 +15,23 @@ public class ProductService {
 		
 	    return list;
 	}	
-//Ìõ¼ş²éÑ¯
+//æ¡ä»¶æŸ¥è¯¢
 		public ArrayList<Product> Find2(Product product) throws SQLException{
 			ArrayList<Product> list1=pd.Find(product);
 		   return list1;
 		}
-		//É¾³ı
+		//åˆ é™¤
 		public int  delete(Product product) throws SQLException{
-			
+			system.out.println("ä½ å¥½å•Šæ‰“å‘ ");
 			int no=pd.Delete(product);
 			return no;
 		}
-		//Ôö¼Ó
+		//å¢åŠ 
 		public int  Add(Product product) throws SQLException{
 			int no=pd.Add(product);
 		return no;
 		}
-		//·ÖÒ³
+		//åˆ†é¡µ
 		public ArrayList<Product> FindFen() throws SQLException {
 			
 			ArrayList<Product> list=pd.Page();
