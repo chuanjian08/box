@@ -10,7 +10,7 @@ public class UserService implements com.oracle.interf.UserService{
 	Userdao us =new Userdao();
 	@Override
 	public int userAdd(Shop_User sh) throws SQLException {
-		
+		system.out.println("你很牛啊");
 		
 		return us.userAdd(sh);
 		
