@@ -10,7 +10,7 @@ public class UserService implements com.oracle.interf.UserService{
 	Userdao us =new Userdao();
 	@Override
 	public int userAdd(Shop_User sh) throws SQLException {
-		
+		 阿达啊打发斯蒂芬啊啊大师傅啊 
 		
 		return us.userAdd(sh);
 		
@@ -32,7 +32,7 @@ public class UserService implements com.oracle.interf.UserService{
 	@Override
 	public void register(Shop_User us) {
 		// TODO Auto-generated method stub
-		
+		sys
 	}
 	
 	
